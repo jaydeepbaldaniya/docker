@@ -34,6 +34,6 @@ $ docker run -d -p 80:3000 -v app-data:/app/data react-app ( here -v represents 
 $ docker volume create volumeName
 $ docker cp source destination ( source any container/local path ,destination any container/local path )
 $ docker run -d -p 5001:3000 -v $(pwd):/reactjs react-app:v2 ( map local code & container for development purpose , no need to create images )
-$ docker container rm $($ docker container ls -aq) //remove all containers
-$ docker image rm $($ docker image ls -aq) //remove all images
+$ docker container rm $(docker container ls -aq) //remove all containers
+$ docker image rm $(docker image ls -aq) //remove all images
 ```
